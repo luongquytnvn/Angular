@@ -1,0 +1,12 @@
+<p>Awesome Caculator</p>
+<input type="number" (change)="setNumber1($event.target.value)">
+<select (change)="setOperator($event.target.value)">
+  <option>+</option>
+  <option>-</option>
+  <option>x</option>
+  <option>/</option>
+</select>
+<input type="number" (change)="setNumber2($event.target.value)">
+<button (click)="onClick()">Thực thi</button>
+<h2>Result: {{result}}</h2>
+
